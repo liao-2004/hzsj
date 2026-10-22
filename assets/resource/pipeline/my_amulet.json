@@ -1,9 +1,27 @@
 {
-    //护符界面
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 449,
+                "y": -77,
+                "zoom": 0.7
+            },
+            "filename": "新建Pipeline3",
+            "version": "v2.1.0"
+        }
+    },
     "激活护符": {
-        "recognition": "OCR",
-        "expected": "激活护符",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "激活护符"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "repeat": 3,
         "repeat_delay": 2000,
         "timeout": 5000,
@@ -13,56 +31,104 @@
             "护符2",
             "护符3",
             "护符4",
-            "点击一下选项位置",
+            "点击一下选项位置"
         ],
         "on_error": [
             "护符界面叉叉",
             "离开地点"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
     },
     "护符1": {
-        "recognition": "TemplateMatch",
-        "template": "护符1.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "护符1.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 3000,
         "next": [
             "激活"
         ],
-        "timeout": 3000,
         "on_error": [
             "护符界面叉叉",
             "离开地点"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 117
+            }
+        }
     },
     "护符2": {
-        "recognition": "TemplateMatch",
-        "template": "护符2.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "护符2.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 3000,
         "next": [
             "激活"
         ],
-        "timeout": 3000,
         "on_error": [
             "护符界面叉叉",
             "离开地点"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 432
+            }
+        }
     },
     "护符3": {
-        "recognition": "TemplateMatch",
-        "template": "护符3.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "护符3.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 3000,
         "next": [
             "激活"
         ],
-        "timeout": 3000,
         "on_error": [
             "护符界面叉叉",
             "离开地点"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 1202
+            }
+        }
     },
     "护符4": {
-        "recognition": "TemplateMatch",
-        "template": "护符4.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "护符4.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "timeout": 3000,
         "next": [
             "激活"
@@ -70,30 +136,100 @@
         "on_error": [
             "护符界面叉叉",
             "离开地点"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 887
+            }
+        }
     },
     "激活": {
-        "recognition": "TemplateMatch",
-        "template": "激活.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "激活.png"
+            }
+        },
         "pre_delay": 2000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 3000,
         "next": [
             "离开地点",
             "地图页面"
         ],
-        "timeout": 3000,
         "on_error": [
             "护符界面叉叉",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 633
+            }
+        }
     },
     "护符界面叉叉": {
-        "recognition": "TemplateMatch",
-        "template": "护符界面叉叉.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "护符界面叉叉.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "离开地点",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 481
+            }
+        }
     },
+    "$__mpe_external_直接离开_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 747
+            }
+        }
+    },
+    "$__mpe_external_点击一下选项位置_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 36
+            }
+        }
+    },
+    "$__mpe_external_离开地点_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1240,
+                "y": 505
+            }
+        }
+    },
+    "$__mpe_external_地图页面_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 722
+            }
+        }
+    },
+    "$__mpe_external_各种事件_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1240,
+                "y": 805
+            }
+        }
+    }
 }

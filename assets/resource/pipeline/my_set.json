@@ -1,52 +1,157 @@
 {
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 805,
+                "y": 339,
+                "zoom": 0.27
+            },
+            "filename": "新建Pipeline3",
+            "version": "v2.1.0"
+        }
+    },
     "局内设置按钮": {
-        "recognition": "TemplateMatch",
-        "template": "局内设置按钮.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "局内设置按钮.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "局内卡组按钮",
             "放弃此轮游戏"
         ],
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 427
+            }
+        }
     },
     "局内卡组按钮": {
-        "recognition": "TemplateMatch",
-        "template": "局内卡组按钮.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "局内卡组按钮.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "局内设置按钮",
-            "放弃此轮游戏",
+            "放弃此轮游戏"
         ],
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 413
+            }
+        }
     },
     "放弃此轮游戏": {
-        "recognition": "OCR",
-        "expected": "放弃此轮游戏",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "放弃此轮游戏"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "继续",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 189
+            }
+        }
     },
     "局内叉叉": {
-        "recognition": "TemplateMatch",
-        "template": "局内叉叉.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "局内叉叉.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 460
+            }
+        }
     },
-    "MyTask3": {},
+    "MyTask3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
     "MyTask4": {
-        "recognition": "Custom",
-        "custom_recognition": "my_reco_222",
-        "action": "Custom",
-        "custom_action": "my_action_111"
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "my_reco_222"
+            }
+        },
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "my_action_111"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 460,
+                "y": 0
+            }
+        }
     },
-    "OcrTask": {}
+    "OcrTask": {
+        "$__mpe_code": {
+            "position": {
+                "x": 230,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_external_各种事件_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 594
+            }
+        }
+    },
+    "$__mpe_external_继续_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 223
+            }
+        }
+    }
 }

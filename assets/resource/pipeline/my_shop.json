@@ -1,88 +1,193 @@
 {
-    // 商店页面
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 723,
+                "y": 316,
+                "zoom": 0.27
+            },
+            "filename": "新建Pipeline3",
+            "version": "v2.1.0"
+        }
+    },
     "移除卡牌": {
-        "recognition": "OCR",
-        "expected": "移除卡牌",
-        "action": "Click",
-        "next": [
-            "移除卡牌界面",
-        ],
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "移除卡牌"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "timeout": 5000,
+        "next": [
+            "移除卡牌界面"
+        ],
         "on_error": [
             "离开地点"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 102
+            }
+        }
     },
     "移除卡牌界面": {
-        "action": "DoNothing",
+        "timeout": 5000,
         "next": [
             "原能卡牌",
             "金块卡牌",
             "负担卡牌"
         ],
-        "timeout": 5000,
         "on_error": [
             "移除卡牌界面返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 283
+            }
+        }
     },
     "原能卡牌": {
-        "recognition": "TemplateMatch",
-        "template": "原能卡牌.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "原能卡牌.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "销毁"
         ],
-        "timeout": 5000,
         "on_error": [
             "移除卡牌界面返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 0
+            }
+        }
     },
     "负担卡牌": {
-        "recognition": "TemplateMatch",
-        "template": "负担卡牌.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "负担卡牌.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "销毁"
         ],
-        "timeout": 5000,
         "on_error": [
             "移除卡牌界面返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 264
+            }
+        }
     },
     "金块卡牌": {
-        "recognition": "TemplateMatch",
-        "template": "金块卡牌.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "金块卡牌.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "销毁"
         ],
-        "timeout": 5000,
         "on_error": [
             "移除卡牌界面返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 587
+            }
+        }
     },
     "销毁": {
-        "recognition": "TemplateMatch",
-        "template": "销毁.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "销毁.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "移除卡牌界面"
         ],
-        "timeout": 5000,
         "on_error": [
             "移除卡牌界面返回"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 173
+            }
+        }
     },
     "移除卡牌界面返回": {
-        "recognition": "TemplateMatch",
-        "template": "移除卡牌界面返回.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "移除卡牌界面返回.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "地图页面"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1240,
+                "y": 330
+            }
+        }
     },
+    "$__mpe_external_离开地点_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 143
+            }
+        }
+    },
+    "$__mpe_external_地图页面_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1550,
+                "y": 396
+            }
+        }
+    }
 }

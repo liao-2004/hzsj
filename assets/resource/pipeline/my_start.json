@@ -1,20 +1,51 @@
 {
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 415,
+                "y": 217,
+                "zoom": 0.61
+            },
+            "filename": "新建Pipeline3",
+            "version": "v2.1.0"
+        }
+    },
     "启动游戏": {
-        "recognition": "TemplateMatch",
-        "template": "hzsj.png",
-        "action": "Click",
-        "rate_limit": 3000,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "hzsj.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "timeout": 100000,
+        "rate_limit": 3000,
         "next": [
             "返回公告",
             "进入游戏"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 56
+            }
+        }
     },
     "返回公告": {
-        "recognition": "TemplateMatch",
-        "template": "返回.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "返回.png"
+            }
+        },
         "pre_delay": 2000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 4,
         "repeat_delay": 1000,
         "next": [
@@ -24,18 +55,52 @@
         "on_error": [
             "启动游戏",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 21
+            }
+        }
     },
     "进入游戏": {
-        "recognition": "TemplateMatch",
-        "template": "进入游戏.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "进入游戏.png"
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 4,
         "repeat_delay": 1000,
-        "pre_delay": 1000,
         "next": [
             "启动祭坛",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 0
+            }
+        }
     },
+    "$__mpe_external_各种事件_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 247
+            }
+        }
+    },
+    "$__mpe_external_启动祭坛_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 930,
+                "y": 54
+            }
+        }
+    }
 }

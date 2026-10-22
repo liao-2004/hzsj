@@ -1,310 +1,663 @@
 {
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 874,
+                "y": -262,
+                "zoom": 0.27
+            },
+            "filename": "新建Pipeline3",
+            "version": "v2.1.0"
+        }
+    },
     "紫色选项": {
-        "recognition": "TemplateMatch",
-        "template": "紫色选项.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "紫色选项.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 4,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 934
+            }
+        }
     },
     "我拒绝": {
-        "recognition": "OCR",
-        "expected": "我拒绝",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "我拒绝"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 4259
+            }
+        }
     },
     "秘密实验室": {
-        "recognition": "OCR",
-        "expected": "秘密实验室",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "秘密实验室"
+            }
+        },
         "next": [
             "队列上限"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 1823
+            }
+        }
     },
     "队列上限": {
-        "recognition": "OCR",
-        "expected": "队列上限",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "队列上限"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 1778
+            }
+        }
     },
     "废墟": {
-        "recognition": "OCR",
-        "expected": "废墟",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "废墟"
+            }
+        },
         "next": [
             "搜刮"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 376
+            }
+        }
     },
     "搜刮": {
-        "recognition": "OCR",
-        "expected": "搜刮",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "搜刮"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 331
+            }
+        }
     },
     "叹息者": {
-        "recognition": "OCR",
-        "expected": "叹息者",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "叹息者"
+            }
+        },
         "next": [
             "你是谁"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 4932
+            }
+        }
     },
     "你是谁": {
-        "recognition": "OCR",
-        "expected": "你是谁",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "你是谁"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 4887
+            }
+        }
     },
     "触发战斗": {
-        "recognition": "OCR",
-        "expected": "触发战斗",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "触发战斗"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 1537
+            }
+        }
     },
     "真是不堪入耳的声音": {
-        "recognition": "OCR",
-        "expected": "真是不堪入耳的声音",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "真是不堪入耳的声音"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 4000,
         "next": [
             "触发战斗",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 1111
+            }
+        }
     },
     "接触火元素符文": {
-        "recognition": "OCR",
-        "expected": "接触火元素符文",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "接触火元素符文"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 2440
+            }
+        }
     },
     "困兽": {
-        "recognition": "OCR",
-        "expected": "困兽",
-        "action": "DoNothing",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "困兽"
+            }
+        },
         "next": [
             "询问他详情"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 870
+            }
+        }
     },
     "询问他详情": {
-        "recognition": "OCR",
-        "expected": "询问他详情",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "询问他详情"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 1206
+            }
+        }
     },
     "大力出奇迹": {
-        "recognition": "OCR",
-        "expected": "大力出奇迹",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "大力出奇迹"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 603
+            }
+        }
     },
     "大肆搜刮": {
-        "recognition": "OCR",
-        "expected": "大肆搜刮",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "大肆搜刮"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 3987
+            }
+        }
     },
     "尝试修理它": {
-        "recognition": "OCR",
-        "expected": "尝试修理它",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "尝试修理它"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 2109
+            }
+        }
     },
     "翻看四周": {
-        "recognition": "OCR",
-        "expected": "翻看四周",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "翻看四周"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "卡牌右上角"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 4605
+            }
+        }
     },
     "卡牌右上角": {
-        "recognition": "TemplateMatch",
-        "template": "卡牌右上角.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "卡牌右上角.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "确定",
             "刻印"
         ],
-        "timeout": 5000,
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 4609
+            }
+        }
     },
     "卡牌右上角紫无框": {
-        "recognition": "TemplateMatch",
-        "template": "卡牌右上角紫无框.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "卡牌右上角紫无框.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "确定",
             "触发战斗",
             "刻印"
         ],
-        "timeout": 5000,
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 2685
+            }
+        }
     },
     "确定": {
-        "recognition": "OCR",
-        "expected": "确定",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "确定"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 3054
+            }
+        }
     },
     "刻印": {
-        "recognition": "OCR",
-        "expected": "刻印",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "刻印"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "next": [
             "刻印返回",
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 4590
+            }
+        }
     },
     "拂去它上面的落叶": {
-        "recognition": "OCR",
-        "expected": "拂去它上面的落叶",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "拂去它上面的落叶"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 3325
+            }
+        }
     },
     "不要吃来路不明的东西": {
-        "recognition": "OCR",
-        "expected": "不要吃来路不明的东西",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "不要吃来路不明的东西"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
+        "timeout": 5000,
         "next": [
             "无畏斧卡牌"
         ],
-        "timeout": 5000,
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 491
+            }
+        }
     },
     "无畏斧卡牌": {
-        "recognition": "TemplateMatch",
-        "template": "无畏斧卡牌.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "无畏斧卡牌.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "刻印",
             "确定"
         ],
-        "timeout": 5000,
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 3008
+            }
+        }
     },
     "头槌卡": {
-        "recognition": "TemplateMatch",
-        "template": "头槌卡.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "头槌卡.png"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 5000,
         "next": [
             "刻印",
             "确定"
         ],
-        "timeout": 5000,
         "on_error": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 4126
+            }
+        }
     },
     "行个方便": {
-        "recognition": "OCR",
-        "expected": "行个方便",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "行个方便"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 0
+            }
+        }
     },
     "达成交易": {
-        "recognition": "OCR",
-        "expected": "达成交易",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "达成交易"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 3656
+            }
+        }
     },
     "特殊卡牌加入卡组": {
-        "recognition": "OCR",
-        "expected": "特殊卡牌加入卡组",
-        "action": "Click",
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "特殊卡牌加入卡组"
+            }
+        },
         "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 620,
+                "y": 2771
+            }
+        }
+    },
+    "$__mpe_external_各种事件_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 960,
+                "y": 2999
+            }
+        }
+    },
+    "$__mpe_external_刻印返回_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 960,
+                "y": 4687
+            }
+        }
     }
 }

@@ -1,50 +1,113 @@
 {
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": 887,
+                "y": 305,
+                "zoom": 0.27
+            },
+            "filename": "新建Pipeline3",
+            "version": "v2.1.0"
+        }
+    },
     "下一步": {
-        "recognition": "TemplateMatch",
-        "template": "next/",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "next/"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    10,
+                    0,
+                    0
+                ]
+            }
+        },
         "repeat": 4,
         "repeat_delay": 1000,
-        "target_offset": [
-            0,
-            10,
-            0,
-            0
-        ],
         "next": [
-            "各种事件",
-        ]
+            "各种事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 662
+            }
+        }
     },
     "a右": {
-        "recognition": "TemplateMatch",
-        "template": "a右.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "a右.png"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -15,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
         "repeat": 4,
         "repeat_delay": 1000,
-        "target_offset": [
-            -15,
-            0,
-            0,
-            0
-        ],
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 331
+            }
+        }
     },
     "a左": {
-        "recognition": "TemplateMatch",
-        "template": "a左.png",
-        "action": "Click",
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "a左.png"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    15,
+                    0,
+                    0,
+                    0
+                ]
+            }
+        },
         "repeat": 4,
         "repeat_delay": 1000,
-        "target_offset": [
-            15,
-            0,
-            0,
-            0
-        ],
         "next": [
             "各种事件"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
     },
+    "$__mpe_external_各种事件_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 310,
+                "y": 427
+            }
+        }
+    }
 }
